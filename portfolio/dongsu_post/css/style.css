@@ -1,0 +1,703 @@
+
+@font-face {
+    font-family: 'pretendard';
+    src: url(../font/PretendardVariable.woff2);
+}
+
+
+@font-face {
+    font-family: 'PyeongChangPeace-Light';
+    src: url(../font/PyeongChangPeace-Light.ttf);
+}
+
+
+@font-face {
+    font-family:'PyeongChangPeace-Bold';
+    src: url(../font/PyeongChangPeace-Bold.ttf);
+}
+
+@font-face {
+    font-family:'PyeongChang-Regular.woff2';
+    src: url(../font/PyeongChang-Regular.woff2);
+}
+@font-face {
+    font-family: 'yangjin';
+    src: url(../font/yangjin.ttf);
+}
+*{
+    margin:0;
+    padding:0;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;}
+
+     
+.event{
+    width: 1900px;
+    height: 100px;
+    background-color: #e32d26;
+  
+  
+}
+
+.event .txt{
+    display: flex;
+    justify-content: center;
+
+}
+.event .txt img{
+    height: 100px;
+}
+.event .p1{
+    color: #f9b531;
+    font-family:'PyeongChangPeace-Bold';
+    font-weight: 900;
+    font-size: 36px;
+    text-shadow:  -3px 0 #ffffff, 0 3px #ffffff, 3px 0 #ffffff, 0 -3px #ffffff;
+ padding-top: 30px;
+ padding-bottom: 30px;
+ padding-right: 10px;
+
+}
+
+.event .p2{
+    font-size: 20px;
+    font-weight: 600;
+    color: #ffdc99;
+    font-family: 'PyeongChangPeace-Light';
+   padding-top: 30px;
+   padding-bottom: 30px;
+   padding-right: 10px;
+   
+  
+}
+
+
+.event span{
+    color: #ffffff;
+    font-family:'PyeongChangPeace-Bold';
+    font-size: 32px;
+    padding-right: 30px;
+    padding-top: 30px;
+    padding-right: 30px;
+}
+
+    .hWrap{
+        position: relative;
+
+    }
+    header h1{
+        text-align: center;
+        padding-top: 20px;
+       
+        }
+
+        h1 img{width: 160px;
+            height: 100px;
+
+        }
+
+        header .gnb{
+            display: flex;
+            background-color: bisque;
+            justify-content: center;
+            margin-top: 10px;
+            color: #e94e4e;
+            font-family: 'yangjin';
+            font-size: 18px;
+            height: 34px;
+            font-weight: 200;
+            padding-top: 15px;
+          
+  
+            
+        
+            }
+
+
+
+            header .gnb li{
+                margin-left: 20px;
+                margin-right: 20px;
+            }
+
+
+
+
+header{
+    z-index: 99;
+    width: 100%;
+}
+
+            header.on{
+                position: fixed;
+            }
+            header.on .hWrap{
+                display: flex;
+            }
+            
+            header.on h1{
+                padding-top:10px;
+                color: #333;
+                display: none;
+            }
+            
+            header.on .gnb{
+                margin-left: auto;
+                color: white;
+                background-color: #e94e4e;;
+            }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            .search{
+
+                width: 250px;
+                height: 30px;
+                border-radius: 20px;
+                border: 2px solid #e94e4e;
+       position: absolute;
+       top: 120px;
+       right: 15px;
+            }
+
+            .search p{
+                color: #5e5e5e;
+                font-size: 15px;
+                padding-top: 7px;
+                padding-bottom: 10px;
+                text-align: center;
+                font-family: 'pretendard';
+                font-weight: 500;
+            }
+            
+            .row1{
+                margin-top: 50px;
+               text-align: center;
+                
+            
+            }
+
+              
+            .row2{
+                margin-top: 50px;
+               text-align: center;
+                
+            
+            }
+
+            .row3{
+                margin-top: 50px;
+                text-align: center;
+            }
+
+            .btn button{
+                font-size: 20px;
+                
+                border: 2px solid #505050;
+                background-color: transparent;
+                
+               margin-top: 5px;
+               margin-bottom: 1px;
+               border-radius: 20px;
+               line-height: 42px;
+               width: 42px;
+               height: 42px;
+              
+            }
+            
+            .btn button:hover{
+                background-color: #000;
+                color: #fff;
+            }
+            .bn .images .slide{
+               height: 700px;
+     
+          
+                
+               
+            }
+            .bn .images .slide1{
+               
+                background-image: url(../images/slide1.png);
+                background-size: cover;
+            }
+            .bn .images .slide2{
+                background-image: url(../images/slide2.png);
+                background-size: cover;
+            }
+            
+            .bn .images .slide3{
+                background-image: url(../images/slide3.png);
+                background-size: cover;
+            }
+
+
+            .con{
+                display: flex;
+                 height: 500px;
+                 background-color: #ffffff;}
+
+                 .con2{
+                    display: flex;
+                     height: 500px;
+                     background-color: #ffffff;}
+            .item1,.item2,.item3,.item4,.item5,.item6{
+                border: 2px solid rgba(0,0,0,0.7);
+                width: 500px;
+               height: 350px;
+             
+               margin-left: 20px;
+               margin-right: 20px;
+               margin-top: 30px;
+        
+            }
+
+            .item7{
+                border: 2px solid rgba(0,0,0,0.6);
+                width: 500px;
+               height: 360px;
+             
+               margin-left: 20px;
+               margin-right: 20px;
+               margin-top: 30px;
+              
+        
+            }
+         
+
+            .item1 img,.item2 img,.item3 img,.item4 img,.item5 img,.item6 img{
+                width: 150px;
+                height: 190px;
+                transform: translateY(-30px);
+                margin-left: auto;
+                margin-right: auto;
+              
+            }
+
+
+            .item7 img{width: 200px;
+            height:160px ;
+            transform: translateY(-30px);
+            margin-left: auto;
+            margin-right: auto;
+            }
+
+            .txt1{
+                text-align: center;
+                padding-top: 40px;
+                font-family:'PyeongChang-Regular.woff2';
+                font-size: 18px;
+                padding-bottom: 10px;
+                font-weight: 00;
+            }
+
+            .item7 .txt{
+                padding-top: 70px ;
+            }
+.item7 h3{
+    margin-top: 20px;
+}
+            h3{
+                text-align: center;
+                font-family: 'yangjin';
+                font-weight: 300;
+                font-size: 24px;
+                color: rgba(0,0,0,0.7);
+                padding-top: 20px;
+              
+            }
+
+     .row1 h2,.row2 h2,.row3 h2{
+        font-family: 'PyeongChangPeace-Light';
+        font-size: 24px;
+
+     }
+     .con3{
+        display: flex;
+         height: 500px;
+         background-color: #ffffff;}
+
+
+         .fes{
+            background-color: bisque;
+            height: 800px;
+            position: relative;
+            overflow: hidden;
+         }
+
+         .fes .txt2 P{
+color: #fff;
+font-size: 180px;
+font-family:'PyeongChangPeace-Bold';
+position: absolute;
+bottom: 40px;
+left: 150px;
+
+
+animation-name: fade;
+   animation-duration: 3s;
+   opacity: 0;
+   transform: translateY(20px);
+  
+
+   animation-fill-mode: forwards;
+   animation-delay: 0.5s;
+   animation-iteration-count: infinite;
+   color: #e94e4e;
+         }
+
+         @keyframes fade{
+            0%{
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            100%{
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+         .name{
+            width: 360px;
+            height: 450px;
+            background-color: white;
+            position: absolute;
+            top: 0;
+            right:440px;
+
+         }
+
+        
+.name p{
+    font-family:'PyeongChang-Regular.woff2';
+    font-size: 14px;
+    text-align: center;
+ 
+}
+
+         .name img{
+            width: 320px;
+            height: 320px;
+          margin-left: 20px;
+          margin-right: 20px;
+          margin-top: 30px;
+         }
+
+
+
+         .gasa{
+            width: 360px;
+            height: 450px;
+            background-color: white;
+            position: absolute;
+            top: 470px;
+            right:440px;
+
+         }
+         
+         .gasa img{
+            width: 320px;
+            height: 320px;
+          margin-left: 20px;
+          margin-right: 20px;
+          margin-top: 30px;
+         }
+
+         .myhouse{
+            width: 360px;
+            height: 450px;
+            background-color: white;
+            position: absolute;
+            top: -50px;
+            right:52px;
+            margin-right: 10px;
+            
+
+         }
+
+         .myhouse p{
+            font-family:'PyeongChang-Regular.woff2';
+            font-size: 14px;
+            text-align: center;
+         
+        }
+
+         .myhouse img{
+            width: 320px;
+            height: 320px;
+          margin-left: 20px;
+          margin-right: 20px;
+          margin-top: 30px;
+         }
+
+         
+         .time{
+            width: 360px;
+            height: 450px;
+            background-color: white;
+            position: absolute;
+            top: 420px;
+            right:52px;
+            margin-right: 10px;
+
+         }
+         .time img{
+            width:320px;
+            height: 320px;
+          margin-left: 20px;
+          margin-right: 20px;
+          margin-top: 35px;
+         }
+
+
+         .insta{
+
+            margin-top: 60px;
+            height: 650px;
+            width: 1900px;
+            background-color: rgb(253, 252, 252);
+            text-align: center;
+            overflow: hidden;
+          
+            
+         }
+
+         .insta p{
+            font-family:'PyeongChang-Regular.woff2';
+            font-weight: 800;
+            font-size: 18px;
+            text-align: center;
+           padding-top: 15px;
+         }
+
+      .insta .img1 img{
+        text-align: center;
+        width: 300px;
+        height: 50px;
+      }
+
+      .imgone img{
+        width: 200px;
+        height: 200px;
+        margin-left: 20px;
+        margin-right: 20px;
+        
+      }
+
+      .imgtwo img{
+        width: 200px;
+        height: 200px;
+        margin-left: 20px;
+        margin-right: 20px;
+        
+      }
+
+      .imgone{
+        display: flex;
+        justify-content: center;
+
+        display: inline-block;
+        animation-duration: 77.2s;
+        animation-timing-function: linear;
+        animation-delay: 0s;
+        animation-iteration-count: infinite;
+        animation-fill-mode: none;
+        animation-name: simplemarquee;
+        width: 3000px;
+        position: relative;
+        overflow: hidden;
+
+      }
+
+      .imgone:hover{
+        animation-play-state: paused;
+      }
+
+      
+      .imgtwo:hover{
+        animation-play-state: paused;
+      }
+
+      @keyframes simplemarquee{
+        0%{right: 100px;}
+        100%{right: 2400px;}
+      }
+
+      .imgtwo{
+        margin-top: 40px;
+        display: flex;
+        justify-content: center;
+
+        display: inline-block;
+        animation-duration: 77.2s;
+        animation-timing-function: linear;
+        animation-delay: 0s;
+        animation-iteration-count: infinite;
+        animation-fill-mode: none;
+        animation-name: simplemarquee2;
+        width: 3000px;
+        position: relative;
+        overflow: hidden;
+      }
+
+      @keyframes simplemarquee2{
+        0%{right: 100px;}
+        100%{right: 2400px;}
+      }
+
+      .video{
+        text-align: center;
+        margin-top: 30px;
+  
+
+      }
+
+      .vimg img{
+        width: 1400px;
+        height: 600px;
+    
+      }
+
+      .vimg{
+        position: relative;
+      }
+.cocov{
+    position: absolute;
+    top: 135px;
+    left: 370px;
+}
+
+.videotxt{
+    position: absolute;
+    top: 75px;
+    left: 940px;
+    
+}
+
+.videotxt img{
+    width: 240px;
+    height: 480px;
+}
+
+.video1{
+   
+    position: absolute;
+    top: 100px;
+    right: 385px;
+}
+
+.video2{
+   
+    position: absolute;
+    top: 245px;
+    right: 385px;
+}
+.video1 img{
+    width: 300px;
+    height: 140px;
+}
+
+.video2 img{
+    width: 300px;
+    height: 140px;
+}
+
+.video3 img{
+    width: 300px;
+    height: 140px;
+}
+
+
+.video3{
+   
+    position: absolute;
+    top: 390px;
+    right: 385px;
+}
+
+
+
+      .footer{
+        margin-top: 30px;
+        height: 50px;
+        background-color: white
+        ;
+        position: relative;
+        margin-bottom: 20px;
+      }
+.footer p{
+    font-family: 'pretendard';
+    font-weight: 500;
+    font-size: 18px;
+    color: rgba(0,0,0,0.6);
+   padding-left: 60px;
+
+}
+
+.fb img{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 10px;
+    right: 80px;
+}
+
+.insta2 img{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 10px;
+    right: 40px;
+}
+      .totalimg{
+        /* width controls how much space the marquee takes up */
+        width: 100%;
+        display: inline-block;
+        white-space: nowrap;
+        overflow: hidden;
+      }
+      .totalimg .imgone {
+         /* width controls number of slides to show at once */
+        width: 100%;
+        display: inline-block;
+        padding: 1rem;
+      }
+
+      .totalimg .imgtwo {
+        /* width controls number of slides to show at once */
+       width: 100%;
+       display: inline-block;
+       padding: 1rem;
+     }
+
+          .hbd{
+ 
+
+width: 1800px;
+
+
+margin-left: auto;
+margin-right: auto;
+          } 
+.hbd img{
+
+}

@@ -1,0 +1,67 @@
+<script>
+    $( function() {
+
+var Increment = 3; // Amount to move per tick...
+var LoopDelay = 400/30; // How fast ticks happen...
+var Loop;
+
+function DestroyLoop() {
+  clearInterval( Loop );
+}
+
+function CreateLoop() {
+  Loop = setInterval( function() {
+
+    var FirstSlide = $( '.totalimg .imgone:first-child' );
+    var FirstMargin = parseInt( FirstSlide.css( 'margin-left' ) ) - Increment;
+    FirstSlide.css( { 'margin-left' : FirstMargin } );
+
+    if( Math.abs( FirstMargin ) >= FirstSlide.outerWidth() ) {
+      FirstSlide.css( { 'margin-left' : 0 } );
+      FirstSlide.appendTo( $( '.totalimg' ) );
+    }
+
+  }, LoopDelay );
+}
+
+$( '.totalimg' ).on( 'mouseenter', DestroyLoop );
+$( '.totalimg' ).on( 'mouseleave', CreateLoop );
+CreateLoop();
+
+} );
+
+
+$( function() {
+
+var Increment = 3; 
+var LoopDelay = 400/30;
+var Loop;
+
+function DestroyLoop() {
+  clearInterval( Loop );
+}
+
+function CreateLoop() {
+  Loop = setInterval( function() {
+
+    var FirstSlide = $( '.totalimg2 .imgtwo:first-child' );
+    var FirstMargin = parseInt( FirstSlide.css( 'margin-right' ) ) - Increment;
+    FirstSlide.css( { 'margin-right' : FirstMargin } );
+
+    if( Math.abs( FirstMargin ) >= FirstSlide.outerWidth() ) {
+      FirstSlide.css( { 'margin-right' : 0 } );
+      FirstSlide.appendTo( $( '.totalimg2' ) );
+      
+    }
+
+  }, LoopDelay );
+}
+
+$( '.totalimg2' ).on( 'mouseenter', DestroyLoop );
+$( '.totalimg2' ).on( 'mouseleave', CreateLoop );
+CreateLoop();
+
+} );
+
+
+</script>
